@@ -62,7 +62,7 @@ pkg_source
   pkg_source=http://downloads.sourceforge.net/project/libpng/$pkg_name/${pkg_version}/${pkg_name}-${pkg_version}.tar.gz
   ~~~
 
-> Note: If your package does not require downloading any source code, you can enter any string for the value, but you must also define callbacks for **do_download()** and **do_verify()**. See [Plan callbacks](#plan-callbacks) for more information.
+> Note: If your package does not require downloading any source code, you can enter any non-empty string for the value, but you must also define callbacks for **do_download()** and **do_verify()**. See [Plan callbacks](#plan-callbacks) for more information.
 
 pkg_filename
 : The resulting filename for the download, typically constructed from the `pkg_name` and `pkg_version` values.
